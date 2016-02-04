@@ -7,3 +7,11 @@ if (Meteor.isServer) {
     // code to run on server at startup
   });
 }
+
+Router.route("/", function () {
+  this.render("Home")
+});
+
+Router.route("/about", function () {
+  this.render("About")
+});
