@@ -9,9 +9,17 @@ if (Meteor.isServer) {
 }
 
 Router.route("/", function () {
-  this.render("Home")
+  this.render("home")
 });
 
 Router.route("/about", function () {
-  this.render("About")
+  this.render("about")
+});
+
+Router.route("/javascript", function () {
+  this.render("javascript")
+});
+
+Router.route("/python", function () {
+  this.render("python")
 });
